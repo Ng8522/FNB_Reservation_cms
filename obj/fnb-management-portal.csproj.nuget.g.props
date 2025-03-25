@@ -14,8 +14,5 @@
   </ItemGroup>
   <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
     <Import Project="$(NuGetPackageRoot)mudblazor\8.3.0\buildTransitive\MudBlazor.props" Condition="Exists('$(NuGetPackageRoot)mudblazor\8.3.0\buildTransitive\MudBlazor.props')" />
-    <Import Project="$(NuGetPackageRoot)blazorise\1.7.5\buildTransitive\Blazorise.props" Condition="Exists('$(NuGetPackageRoot)blazorise\1.7.5\buildTransitive\Blazorise.props')" />
-    <Import Project="$(NuGetPackageRoot)blazorise.tailwind\1.7.5\buildTransitive\Blazorise.Tailwind.props" Condition="Exists('$(NuGetPackageRoot)blazorise.tailwind\1.7.5\buildTransitive\Blazorise.Tailwind.props')" />
-    <Import Project="$(NuGetPackageRoot)blazorise.icons.fontawesome\1.7.5\buildTransitive\Blazorise.Icons.FontAwesome.props" Condition="Exists('$(NuGetPackageRoot)blazorise.icons.fontawesome\1.7.5\buildTransitive\Blazorise.Icons.FontAwesome.props')" />
   </ImportGroup>
 </Project>

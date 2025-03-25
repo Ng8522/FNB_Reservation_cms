@@ -2,82 +2,6 @@
   "version": 3,
   "targets": {
     "net9.0": {
-      "Blazorise/1.7.5": {
-        "type": "package",
-        "dependencies": {
-          "Blazorise.Licensing": "1.3.0",
-          "Microsoft.AspNetCore.Components": "9.0.2",
-          "Microsoft.AspNetCore.Components.Web": "9.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.2"
-        },
-        "compile": {
-          "lib/net9.0/Blazorise.dll": {
-            "related": ".xml"
-          }
-        },
-        "runtime": {
-          "lib/net9.0/Blazorise.dll": {
-            "related": ".xml"
-          }
-        },
-        "build": {
-          "buildTransitive/Blazorise.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazorise.props": {}
-        }
-      },
-      "Blazorise.Icons.FontAwesome/1.7.5": {
-        "type": "package",
-        "dependencies": {
-          "Blazorise": "1.7.5",
-          "Microsoft.AspNetCore.Components": "9.0.2",
-          "Microsoft.AspNetCore.Components.Web": "9.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.2"
-        },
-        "compile": {
-          "lib/net9.0/Blazorise.Icons.FontAwesome.dll": {}
-        },
-        "runtime": {
-          "lib/net9.0/Blazorise.Icons.FontAwesome.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazorise.Icons.FontAwesome.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazorise.Icons.FontAwesome.props": {}
-        }
-      },
-      "Blazorise.Licensing/1.3.0": {
-        "type": "package",
-        "compile": {
-          "lib/net9.0/Blazorise.Licensing.dll": {}
-        },
-        "runtime": {
-          "lib/net9.0/Blazorise.Licensing.dll": {}
-        }
-      },
-      "Blazorise.Tailwind/1.7.5": {
-        "type": "package",
-        "dependencies": {
-          "Blazorise": "1.7.5",
-          "Microsoft.AspNetCore.Components": "9.0.2",
-          "Microsoft.AspNetCore.Components.Web": "9.0.2",
-          "Microsoft.Extensions.Logging.Abstractions": "9.0.2"
-        },
-        "compile": {
-          "lib/net9.0/Blazorise.Tailwind.dll": {}
-        },
-        "runtime": {
-          "lib/net9.0/Blazorise.Tailwind.dll": {}
-        },
-        "build": {
-          "buildTransitive/Blazorise.Tailwind.props": {}
-        },
-        "buildMultiTargeting": {
-          "buildMultiTargeting/Blazorise.Tailwind.props": {}
-        }
-      },
       "Microsoft.AspNetCore.Authorization/9.0.3": {
         "type": "package",
         "dependencies": {
@@ -331,166 +255,6 @@
     }
   },
   "libraries": {
-    "Blazorise/1.7.5": {
-      "sha512": "ElYXMxkaBvZDZOJuRbsP3L2e3+2zMxuNYDMMb5r0jg8NnYXNHJmiwK0QhMi4ng1xxiYcfzKg4DOMJjmg5/xnMg==",
-      "type": "package",
-      "path": "blazorise/1.7.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Blazorise.png",
-        "LICENSE.md",
-        "blazorise.1.7.5.nupkg.sha512",
-        "blazorise.nuspec",
-        "build/Blazorise.props",
-        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Blazorise.props",
-        "buildTransitive/Blazorise.props",
-        "lib/net6.0/Blazorise.dll",
-        "lib/net6.0/Blazorise.xml",
-        "lib/net7.0/Blazorise.dll",
-        "lib/net7.0/Blazorise.xml",
-        "lib/net8.0/Blazorise.dll",
-        "lib/net8.0/Blazorise.xml",
-        "lib/net9.0/Blazorise.dll",
-        "lib/net9.0/Blazorise.xml",
-        "staticwebassets/blazorise.css",
-        "staticwebassets/blazorise.min.css",
-        "staticwebassets/breakpoint.js",
-        "staticwebassets/button.js",
-        "staticwebassets/closable.js",
-        "staticwebassets/colorPicker.js",
-        "staticwebassets/datePicker.js",
-        "staticwebassets/dragDrop.js",
-        "staticwebassets/dropdown.js",
-        "staticwebassets/fileEdit.js",
-        "staticwebassets/filePicker.js",
-        "staticwebassets/floatingUi.js",
-        "staticwebassets/inputMask.js",
-        "staticwebassets/io.js",
-        "staticwebassets/memoEdit.js",
-        "staticwebassets/numericPicker.js",
-        "staticwebassets/observer.js",
-        "staticwebassets/table.js",
-        "staticwebassets/textEdit.js",
-        "staticwebassets/theme.js",
-        "staticwebassets/timePicker.js",
-        "staticwebassets/tooltip.js",
-        "staticwebassets/utilities.js",
-        "staticwebassets/validators/DateTimeMaskValidator.js",
-        "staticwebassets/validators/NoValidator.js",
-        "staticwebassets/validators/NumericMaskValidator.js",
-        "staticwebassets/validators/RegExMaskValidator.js",
-        "staticwebassets/vendors/Behave.js",
-        "staticwebassets/vendors/Pickr.js",
-        "staticwebassets/vendors/autoNumeric.js",
-        "staticwebassets/vendors/flatpickr.js",
-        "staticwebassets/vendors/floating-ui-core.js",
-        "staticwebassets/vendors/floating-ui.js",
-        "staticwebassets/vendors/inputmask.js",
-        "staticwebassets/vendors/jsencrypt.js",
-        "staticwebassets/vendors/popper.js",
-        "staticwebassets/vendors/sha512.js",
-        "staticwebassets/vendors/tippy.js"
-      ]
-    },
-    "Blazorise.Icons.FontAwesome/1.7.5": {
-      "sha512": "mXSnzW//h2NSy4ktct3JKtubWTUdohSW+wPuU2daNg8kSteKkHgYa3nQ7OXX/KGustNS8EmJIcpgB9xNiXfJuw==",
-      "type": "package",
-      "path": "blazorise.icons.fontawesome/1.7.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Blazorise.png",
-        "LICENSE.md",
-        "blazorise.icons.fontawesome.1.7.5.nupkg.sha512",
-        "blazorise.icons.fontawesome.nuspec",
-        "build/Blazorise.Icons.FontAwesome.props",
-        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Blazorise.Icons.FontAwesome.props",
-        "buildTransitive/Blazorise.Icons.FontAwesome.props",
-        "lib/net6.0/Blazorise.Icons.FontAwesome.dll",
-        "lib/net7.0/Blazorise.Icons.FontAwesome.dll",
-        "lib/net8.0/Blazorise.Icons.FontAwesome.dll",
-        "lib/net9.0/Blazorise.Icons.FontAwesome.dll",
-        "staticwebassets/v5/css/all.css",
-        "staticwebassets/v5/css/all.min.css",
-        "staticwebassets/v5/webfonts/fa-brands-400.eot",
-        "staticwebassets/v5/webfonts/fa-brands-400.svg",
-        "staticwebassets/v5/webfonts/fa-brands-400.ttf",
-        "staticwebassets/v5/webfonts/fa-brands-400.woff",
-        "staticwebassets/v5/webfonts/fa-brands-400.woff2",
-        "staticwebassets/v5/webfonts/fa-regular-400.eot",
-        "staticwebassets/v5/webfonts/fa-regular-400.svg",
-        "staticwebassets/v5/webfonts/fa-regular-400.ttf",
-        "staticwebassets/v5/webfonts/fa-regular-400.woff",
-        "staticwebassets/v5/webfonts/fa-regular-400.woff2",
-        "staticwebassets/v5/webfonts/fa-solid-900.eot",
-        "staticwebassets/v5/webfonts/fa-solid-900.svg",
-        "staticwebassets/v5/webfonts/fa-solid-900.ttf",
-        "staticwebassets/v5/webfonts/fa-solid-900.woff",
-        "staticwebassets/v5/webfonts/fa-solid-900.woff2",
-        "staticwebassets/v6/css/all.css",
-        "staticwebassets/v6/css/all.min.css",
-        "staticwebassets/v6/webfonts/fa-brands-400.ttf",
-        "staticwebassets/v6/webfonts/fa-brands-400.woff2",
-        "staticwebassets/v6/webfonts/fa-regular-400.ttf",
-        "staticwebassets/v6/webfonts/fa-regular-400.woff2",
-        "staticwebassets/v6/webfonts/fa-solid-900.ttf",
-        "staticwebassets/v6/webfonts/fa-solid-900.woff2",
-        "staticwebassets/v6/webfonts/fa-v4compatibility.ttf",
-        "staticwebassets/v6/webfonts/fa-v4compatibility.woff2"
-      ]
-    },
-    "Blazorise.Licensing/1.3.0": {
-      "sha512": "NvQlbUgd6jY/ZfkJPlhHLaMVyvfp24OMehFV8Y6mrqLHqC0CfcoE+6+YP9FZMZKNAWmcNZ85WXmYFWVl0UXGfw==",
-      "type": "package",
-      "path": "blazorise.licensing/1.3.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Blazorise.png",
-        "LICENSE.md",
-        "blazorise.licensing.1.3.0.nupkg.sha512",
-        "blazorise.licensing.nuspec",
-        "lib/net6.0/Blazorise.Licensing.dll",
-        "lib/net7.0/Blazorise.Licensing.dll",
-        "lib/net8.0/Blazorise.Licensing.dll",
-        "lib/net9.0/Blazorise.Licensing.dll"
-      ]
-    },
-    "Blazorise.Tailwind/1.7.5": {
-      "sha512": "B5kGftO/aiLaLxFqCwJGAUuklEeTGtL74spB4Ybq4H3Jflam/KiSdnDYfrNv8W5Y+34/BXdb+kc0CGNrEYjdiQ==",
-      "type": "package",
-      "path": "blazorise.tailwind/1.7.5",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "Blazorise.png",
-        "LICENSE.md",
-        "blazorise.tailwind.1.7.5.nupkg.sha512",
-        "blazorise.tailwind.nuspec",
-        "build/Blazorise.Tailwind.props",
-        "build/Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
-        "build/Microsoft.AspNetCore.StaticWebAssets.props",
-        "buildMultiTargeting/Blazorise.Tailwind.props",
-        "buildTransitive/Blazorise.Tailwind.props",
-        "lib/net6.0/Blazorise.Tailwind.dll",
-        "lib/net7.0/Blazorise.Tailwind.dll",
-        "lib/net8.0/Blazorise.Tailwind.dll",
-        "lib/net9.0/Blazorise.Tailwind.dll",
-        "staticwebassets/blazorise.tailwind.config.js",
-        "staticwebassets/blazorise.tailwind.css",
-        "staticwebassets/blazorise.tailwind.min.css",
-        "staticwebassets/blazorise.tailwind.prod.css",
-        "staticwebassets/modal.js",
-        "staticwebassets/tailwind.config.js",
-        "staticwebassets/tailwind.safelist.config.js",
-        "staticwebassets/tooltip.js"
-      ]
-    },
     "Microsoft.AspNetCore.Authorization/9.0.3": {
       "sha512": "3lPGz48SKHAAHY3sMGx+71KeyV6fjBHPGbSoBxwjt9WK4+Lr0/MHi6cWyXZVohWoxFmqq/2hJ39LUryn7w65EA==",
       "type": "package",
@@ -877,9 +641,6 @@
   },
   "projectFileDependencyGroups": {
     "net9.0": [
-      "Blazorise >= 1.7.5",
-      "Blazorise.Icons.FontAwesome >= 1.7.5",
-      "Blazorise.Tailwind >= 1.7.5",
       "Microsoft.AspNetCore.Components.Web >= 9.0.3",
       "MudBlazor >= 8.3.0"
     ]
@@ -927,18 +688,6 @@
       "net9.0": {
         "targetAlias": "net9.0",
         "dependencies": {
-          "Blazorise": {
-            "target": "Package",
-            "version": "[1.7.5, )"
-          },
-          "Blazorise.Icons.FontAwesome": {
-            "target": "Package",
-            "version": "[1.7.5, )"
-          },
-          "Blazorise.Tailwind": {
-            "target": "Package",
-            "version": "[1.7.5, )"
-          },
           "Microsoft.AspNetCore.Components.Web": {
             "target": "Package",
             "version": "[9.0.3, )"

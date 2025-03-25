@@ -44,18 +44,6 @@
         "net9.0": {
           "targetAlias": "net9.0",
           "dependencies": {
-            "Blazorise": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
-            "Blazorise.Icons.FontAwesome": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
-            "Blazorise.Tailwind": {
-              "target": "Package",
-              "version": "[1.7.5, )"
-            },
             "Microsoft.AspNetCore.Components.Web": {
               "target": "Package",
               "version": "[9.0.3, )"
