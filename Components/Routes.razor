@@ -1,6 +1,19 @@
-﻿<Router AppAssembly="typeof(Program).Assembly">
+﻿<Router AppAssembly="@typeof(Program).Assembly">
     <Found Context="routeData">
-        <RouteView RouteData="routeData" DefaultLayout="typeof(Layout.MainLayout)" />
-        <FocusOnNavigate RouteData="routeData" Selector="h1" />
+        <RouteView RouteData="@routeData" DefaultLayout="@GetLayout()" />
     </Found>
 </Router>
+
+@code {
+    Type GetLayout()
+    {
+        var path = Navigation.Uri.Replace(Navigation.BaseUri, "").ToLower();
+        if (path == "test")
+        {
+            return typeof(Layout.LoginRegisterLayout);
+        }
+        return typeof(Layout.LoginRegisterLayout);
+    }
+
+    [Inject] NavigationManager Navigation { get; set; }
+}

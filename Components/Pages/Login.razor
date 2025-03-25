@@ -1,6 +1,39 @@
 @page "/"
+@layout fnb_management_portal.Components.Layout.LoginRegisterLayout
 
-<h1 Class="text-blue-500">
-    Hi
-</h1>
+<PageTitle>Login</PageTitle>
 
+<MudCard Outlined="false" Elevation="0" Class="w-3/4 justify-center h-auto p-6">
+    <MudCardHeader Class="flex flex-col items-center text-center space-y-1">
+        <MudText Typo="Typo.h3" Class="text-blue-800 font-bold">
+            Login Account
+        </MudText>
+        <MudText Typo="Typo.body1" Class="text-blue-800">
+            Enter your email to securely log in to your account
+        </MudText>
+    </MudCardHeader>
+
+    <MudCardContent>
+        <MudForm onsubmit="HandleSubmit">
+            <MudTextField T="string" Label="Email" Variant="Variant.Filled" HelperText="Please enter your email"
+                FullWidth="true" Required="true"/>
+
+            <MudTextField T="string" Label="Password" InputType="InputType.Password"
+                HelperText="Enter your password" FullWidth="true" Required="true"/>
+
+            <MudButton ButtonType="MudBlazor.ButtonType.Submit" Variant="Variant.Filled" Class="mt-4 w-full bg-blue-600 text-blue-100">
+                Login
+            </MudButton>
+        </MudForm>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    private string Email { get; set; } = string.Empty;
+    private string Password { get; set; } = string.Empty;
+
+    private void HandleSubmit()
+    {
+        Console.WriteLine($"Logging in with Email: {Email} and Password: {Password}");
+    }
+}

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\F-B-Reservation\\fnb-management-portal\\fnb-management-portal.csproj": {}
+    "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\fnb-management-portal.csproj": {}
   },
   "projects": {
-    "C:\\F-B-Reservation\\fnb-management-portal\\fnb-management-portal.csproj": {
+    "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\fnb-management-portal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\F-B-Reservation\\fnb-management-portal\\fnb-management-portal.csproj",
+        "projectUniqueName": "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\fnb-management-portal.csproj",
         "projectName": "fnb-management-portal",
-        "projectPath": "C:\\F-B-Reservation\\fnb-management-portal\\fnb-management-portal.csproj",
-        "packagesPath": "C:\\Users\\junyu\\.nuget\\packages\\",
-        "outputPath": "C:\\F-B-Reservation\\fnb-management-portal\\obj\\",
+        "projectPath": "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\fnb-management-portal.csproj",
+        "packagesPath": "C:\\Users\\Adm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\junyu\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Adm\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[1.7.5, )"
             },
+            "Microsoft.AspNetCore.Components.Web": {
+              "target": "Package",
+              "version": "[9.0.3, )"
+            },
             "MudBlazor": {
               "target": "Package",
               "version": "[8.3.0, )"
@@ -80,7 +84,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

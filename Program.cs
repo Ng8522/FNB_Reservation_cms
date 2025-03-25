@@ -1,14 +1,10 @@
 using fnb_management_portal.Components;
-using Blazorise;
-using Blazorise.Tailwind;
-using Blazorise.Icons.FontAwesome;
+using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
-    .AddBlazorise()
-    .AddTailwindProviders()
-    .AddFontAwesomeIcons();
+    .AddMudServices();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
