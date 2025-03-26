@@ -4,43 +4,6 @@
   "Endpoints": [
     {
       "Route": "_content/MudBlazor/MudBlazor.min.css",
-      "AssetFile": "_content/MudBlazor/MudBlazor.min.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "595896"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.css",
       "AssetFile": "_content/MudBlazor/MudBlazor.min.css.gz",
       "Selectors": [
         {
@@ -85,6 +48,43 @@
         {
           "Name": "Vary",
           "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.css",
+      "AssetFile": "_content/MudBlazor/MudBlazor.min.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "595896"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d1ee8m8CKXHLkW0DDwn00o/ghDNhscMVl/ei7IzThfU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
         }
       ],
       "EndpointProperties": [
@@ -186,43 +186,6 @@
     },
     {
       "Route": "_content/MudBlazor/MudBlazor.min.js",
-      "AssetFile": "_content/MudBlazor/MudBlazor.min.js",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "55250"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/javascript"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
-        }
-      ]
-    },
-    {
-      "Route": "_content/MudBlazor/MudBlazor.min.js",
       "AssetFile": "_content/MudBlazor/MudBlazor.min.js.gz",
       "Selectors": [
         {
@@ -267,6 +230,43 @@
         {
           "Name": "Vary",
           "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ="
+        }
+      ]
+    },
+    {
+      "Route": "_content/MudBlazor/MudBlazor.min.js",
+      "AssetFile": "_content/MudBlazor/MudBlazor.min.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "55250"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Y5zCtrV6/XngfIAwnKZESn//G3w6zwlrDewTKl6fojQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 23 Feb 2025 18:04:24 GMT"
         }
       ],
       "EndpointProperties": [
@@ -407,7 +407,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:29:51 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -448,7 +448,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:29:51 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -489,7 +489,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:29:51 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -544,7 +544,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:29:51 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -593,7 +593,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:29:51 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -642,7 +642,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:29:51 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -691,7 +691,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 10:06:07 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -736,7 +736,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 10:06:07 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -787,7 +787,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:47:44 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -836,7 +836,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:47:44 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -885,7 +885,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:47:44 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -948,7 +948,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:47:44 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",
@@ -989,7 +989,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:47:44 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         }
       ],
       "EndpointProperties": [
@@ -1030,7 +1030,7 @@
         },
         {
           "Name": "Last-Modified",
-          "Value": "Tue, 25 Mar 2025 14:47:44 GMT"
+          "Value": "Tue, 25 Mar 2025 23:14:12 GMT"
         },
         {
           "Name": "Vary",

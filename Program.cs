@@ -1,10 +1,14 @@
 using fnb_management_portal.Components;
+using Services;
 using MudBlazor.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
     .AddMudServices();
+
+// Add HTTP client and API service
+builder.Services.AddHttpClient<ApiService>();
 
 // Add services to the container.
 builder.Services.AddRazorComponents()
@@ -22,11 +26,13 @@ if (!app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-
 app.UseAntiforgery();
 
 app.MapStaticAssets();
 app.MapRazorComponents<App>()
     .AddInteractiveServerRenderMode();
+
+// Add default route redirection to login
+app.MapGet("/", () => Results.Redirect("/login"));
 
 app.Run();

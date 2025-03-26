@@ -1,0 +1,86 @@
+@page "/login"
+@layout fnb_management_portal.Components.Layout.LoginRegisterLayout
+@using System.ComponentModel.DataAnnotations
+@using Services
+@using Models
+@inject IJSRuntime JSRuntime
+@inject ApiService ApiService
+@inject NavigationManager NavigationManager
+
+<PageTitle>Login</PageTitle>
+
+<MudCard Outlined="false" Elevation="0" Class="w-3/4 justify-center h-auto p-6 bg-black">
+    <MudCardHeader Class="flex flex-col items-center text-center space-y-1">
+        <MudText Typo="Typo.h3" Class="text-blue-800">
+            <b>Login Account</b>
+        </MudText>
+        <MudText Typo="Typo.body1" Class="text-blue-800">
+            Enter your email to securely log in to your account
+        </MudText>
+    </MudCardHeader>
+
+    <MudCardContent>
+        @if (!string.IsNullOrEmpty(loginResponse?.Message))
+        {
+            <MudAlert Severity="@(loginResponse.Success? Severity.Success: Severity.Error)" Class="mb-4">
+                @loginResponse.Message
+            </MudAlert>
+        }
+
+        @if (!string.IsNullOrEmpty(debugMessage))
+        {
+            <MudAlert Severity="Severity.Info" Class="mb-4">
+                @debugMessage
+            </MudAlert>
+        }
+
+        <EditForm Model="@loginRequest" OnValidSubmit="HandleSubmit" FormName="loginForm">
+            <MudTextField ShrinkLabel @bind-Value="loginRequest.Email" For="@(() => loginRequest.Email)" Label="Email" Variant="Variant.Filled"
+                HelperText="Please enter your email" FullWidth="true" InputType="InputType.Email" Required="true" />
+
+            <MudTextField ShrinkLabel @bind-Value="loginRequest.Password" For="@(() => loginRequest.Password)" Label="Password"
+                InputType="InputType.Password" Variant="Variant.Filled" HelperText="Enter your password"
+                FullWidth="true" Required="true" />
+
+            <MudButton ButtonType="ButtonType.Submit" Variant="Variant.Filled" Color="Color.Primary"
+                Class="mt-4 w-full">
+                Login
+            </MudButton>
+        </EditForm>
+
+        <MudLink Href="#" Class="text-blue-800 text-center block">Forgot Password?</MudLink>
+    </MudCardContent>
+</MudCard>
+
+@code {
+    private LoginRequest loginRequest { get; set; } = new();
+    private LoginResponse loginResponse = new();
+    private string debugMessage = string.Empty;
+
+    private void ShowDebugInfo()
+    {
+        debugMessage = $"Current Input Values:\nEmail: {loginRequest.Email}\nPassword: {loginRequest.Password}";
+        StateHasChanged();
+    }
+
+    private async Task HandleSubmit()
+    {
+        try
+        {
+            debugMessage = $"Submitting Login Request:\nEmail: {loginRequest.Email}\nPassword: {loginRequest.Password}";
+            StateHasChanged();
+
+            loginResponse = await ApiService.LoginAsync(loginRequest.Email, loginRequest.Password);
+
+            if (loginResponse.Success)
+            {
+                await JSRuntime.InvokeVoidAsync("localStorage.setItem", "authToken", loginResponse.Token);
+                NavigationManager.NavigateTo("/admin/admin-dashboard");
+            }
+        }
+        catch (Exception ex)
+        {
+            loginResponse = new LoginResponse { Success = false, Message = ex.Message };
+        }
+    }
+}

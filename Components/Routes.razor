@@ -8,9 +8,9 @@
     Type GetLayout()
     {
         var path = Navigation.Uri.Replace(Navigation.BaseUri, "").ToLower();
-        if (path == "test")
+        if (path == "admin")
         {
-            return typeof(Layout.LoginRegisterLayout);
+            return typeof(Layout.MainLayout);
         }
         return typeof(Layout.LoginRegisterLayout);
     }

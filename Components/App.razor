@@ -11,7 +11,7 @@
 </head>
 
 <CascadingAuthenticationState>
-    <MudThemeProvider />
+    <MudThemeProvider Theme="CustomTheme" />
     <Router AppAssembly="@typeof(App).Assembly">
         <Found Context="routeData">
             <RouteView RouteData="@routeData" />
@@ -22,3 +22,23 @@
         </NotFound>
     </Router>
 </CascadingAuthenticationState>
+
+@code {
+    MudTheme CustomTheme = new MudTheme()
+    {
+        PaletteLight = new PaletteLight()
+        {
+            AppbarBackground = new MudBlazor.Utilities.MudColor("#1E40AF"), // Tailwind blue-800
+            Primary = new MudBlazor.Utilities.MudColor("#1E40AF"), 
+            Secondary = new MudBlazor.Utilities.MudColor("#3B82F6"), 
+            AppbarText = new MudBlazor.Utilities.MudColor("#000000"), // White text on appbar
+        },
+
+        PaletteDark = new PaletteDark()
+        {
+            AppbarBackground = new MudBlazor.Utilities.MudColor("#1DACD6"),
+            Primary = new MudBlazor.Utilities.MudColor("#1DACD6"),
+            Secondary = new MudBlazor.Utilities.MudColor("#48D1CC"),
+        }
+    };
+}

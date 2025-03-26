@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\wwwroot\\app.css",
+      "Id": "C:\\FNB_Reservation_cms\\wwwroot\\app.css",
       "PackagePath": "staticwebassets\\app.css"
     },
     {
-      "Id": "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\wwwroot\\favicon.png",
+      "Id": "C:\\FNB_Reservation_cms\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "C:\\Users\\Adm\\Documents\\GitHub\\FNB_Reservation_cms\\wwwroot\\index.html",
+      "Id": "C:\\FNB_Reservation_cms\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
